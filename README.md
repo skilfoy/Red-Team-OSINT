@@ -94,14 +94,6 @@ The script performs extensive Open Source Intelligence (OSINT) on a given domain
 8. **Compilation of OSINT Report**:
    - All gathered data is compiled into a comprehensive OSINT report and saved to a JSON file.
 
-### Example Script Execution
-
-To run the script, the user needs to execute it and provide the target domain when prompted:
-```bash
-python osint_script.py
-```
-The user will be prompted to enter the target domain, and the script will then perform the OSINT activities, generating an OSINT report saved as a JSON file named `osint_report_<domain>.json`.
-
 ### Requirements
 
 1. **API Keys**:
@@ -109,6 +101,19 @@ The user will be prompted to enter the target domain, and the script will then p
 
 2. **Python Packages**:
    - Required Python packages include `requests`, `beautifulsoup4`, `python-whois`, `shodan`, `twython`, and `dnspython`.
+
+### Required Packages
+
+```bash
+pip install requests beautifulsoup4 python-whois shodan twython dnspython
+```
+### Example Script Execution
+
+To run the script, the user needs to execute it and provide the target domain when prompted:
+```bash
+python osint_script.py
+```
+The user will be prompted to enter the target domain, and the script will then perform the OSINT activities, generating an OSINT report saved as a JSON file named `osint_report_<domain>.json`.
 
 ### Comprehensive OSINT Report
 
